@@ -63,10 +63,12 @@
  </template>
 
 <style>
-    .containerxl_padding{
+/* Padding que separa los dos colores en TOP*/
+.containerxl_padding{
     padding: 15px;
 }
-    .input-inferior input{
+/* Input donde se edita la transcripción*/
+.input-inferior input{
     padding: 10px;
     margin: auto;
     width: 100%;
@@ -74,24 +76,30 @@
     font-size: 16px;
     background: #1d67cd;
 }
+/* ID, CALL CENTER, AGENT, DATE */
 .color_top_edit {
     background: #e8e6e6;
     padding: 12px;
     padding-bottom: 5px;
     border-radius: 15px;
 }
+/* Color secundario de la Page*/
 .color_back2_edit{
     background: #78ecd5;
 }
+/* Color principal de la Page*/
 .color_back1_edit{
     background: #abf8e5;
 }
+/* Padding encargado de centrar los div más pequeños */
 .focused{
     padding: 17px;
 }
+/* Color de los div que encierran a los Agent and Customer*/
 .color_speaker_edit1{
     background: #48a5d1;
 }
+/* Linea que separa los Agent de Customer */
 .linea {
     border-top: 2px solid rgb(191, 245, 229);
     height: 2px;
