@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import MainBase from '../views/MainBase.vue'
-import MainInicio from '../views/Inicio/MainInicio.vue'
+import ListView from '../views/Inicio/ListView.vue'
 import AboutView from '../views/AboutView.vue'
 import EditView from '../views/Inicio/EditView.vue'
 
@@ -14,9 +14,9 @@ const routes: Array<RouteConfig> = [
     component: MainBase,
     children: [
       {
-        path: '/home/inicio',
-        name: 'MainInicio',
-        component: MainInicio
+        path: '/home/inicio/List',
+        name: 'ListView',
+        component: ListView
       },
       { /* Se agrega la ruta de la nueva vista */
         path: '/home/inicio/about',

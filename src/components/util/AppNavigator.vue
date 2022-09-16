@@ -53,8 +53,8 @@
 		private currentRoute = '';
 		public items: Array<INavigator> = [
 				{
-					title: 'Inicio' as string,
-					urlName: 'MainInicio',
+					title: 'Listado' as string,
+					urlName: 'ListView',
 					parent: 'dashboardInicio',
 					subMenus: [],
 				},
