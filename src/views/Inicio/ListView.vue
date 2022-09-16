@@ -10,7 +10,7 @@
             <button class="btn-filter">Buscar</button>
         </div>
         <div class="Back-Table">
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-responsive table-striped">
 				<thead class="table-head">
 					<tr>
 					<th scope="col">ID</th>
