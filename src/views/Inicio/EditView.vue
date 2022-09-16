@@ -3,7 +3,10 @@
     <body class="color_back1_edit">
         <!-- Lo que esta haciendo el Container XL es centrar el div principal, abarcando width: 100%; margin-right: auto; margin-left: auto; -->
         <div class="container-xl containerxl_padding" >
-
+                <div class="btn_guardar">
+                <h3>Guardar Transcripción</h3>
+                <button type="button" class="color_btn"><strong>Guardar</strong></button>
+                </div>
          <div class="color_back2_edit">
             <div class="focused">
                 <div class="color_top_edit">
@@ -77,21 +80,6 @@
     border-radius: 15px;
     font-size: 16px;
     background: #1d67cd;
-}
-.color_btn{
-    background: #a4dbcc;
-    padding: 10px;
-}
-/* Botón donde se guarda la transcripción*/
-.btn_guardar{
-    padding: 10px;
-    margin: auto;
-    margin-left: 85%;
-    width: 100%;
-    border-radius: 15px;
-    font-size: 16px;
-    background: #fffff2;
-    border-color: #5bc3b0;
 }
 /* ID, CALL CENTER, AGENT, DATE */
 .color_top_edit {
