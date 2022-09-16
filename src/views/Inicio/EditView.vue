@@ -78,6 +78,21 @@
     font-size: 16px;
     background: #1d67cd;
 }
+.color_btn{
+    background: #a4dbcc;
+    padding: 10px;
+}
+/* Botón donde se guarda la transcripción*/
+.btn_guardar{
+    padding: 10px;
+    margin: auto;
+    margin-left: 85%;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 16px;
+    background: #fffff2;
+    border-color: #5bc3b0;
+}
 /* ID, CALL CENTER, AGENT, DATE */
 .color_top_edit {
     background: #e8e6e6;
