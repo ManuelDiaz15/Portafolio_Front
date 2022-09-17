@@ -5,8 +5,8 @@
             <div class="Title-list">
         <h2>{{ message }}</h2>
     </div>
-    <div class="d-flex">
-        <div class="container-fluid Back-Table">
+    <div class="d-flex container-fluid">
+        <div class=" Back-Table">
             <table class="table table-bordered table-responsive table-striped">
 				<thead class="table-head">
 					<tr>
@@ -39,7 +39,7 @@
             <div class="filter">
                 <p class="title-filter">Ingresa la ID de la transcripcion</p>
                     <input  class="F-input" placeholder="ID-transcripción">
-                    <button class="btn-filter">Buscar</button>
+                    <button class="btn-filter btn-secondary btn-sm">Buscar</button>
             </div>
         </div>
     </div>
@@ -85,15 +85,10 @@
     height: 20px;
 }
 .btn-filter{
-    background-color: #4CAF50;
     border: none;
-    color: white;
-    padding: 1px 32px;
     text-align: right;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 10%
 }
 /* Tamaño tabla */
 .Back-Table{
