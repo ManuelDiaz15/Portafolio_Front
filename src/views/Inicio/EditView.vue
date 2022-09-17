@@ -1,19 +1,11 @@
 <template>
     <!-- Cuerpo de la Page -->
     <body class="color_back1_edit">
-        <div class="d-flex">
-                <div class="ml-auto">
-                    <div class="btn_guardar">
-                     <h3>Guardar Transcripción</h3>
-                     <button type="button" class="btn btn-outline-success">Guardar</button>
-                </div>
-                </div>
-            </div>
-        <!-- Lo que esta haciendo el Container XL es centrar el div principal, abarcando width: 100%; margin-right: auto; margin-left: auto; -->
-        <div class="container-xl containerxl_padding d-flex" >
+      <div class="d-flex">
+        <div>
             <div>
          <div class="color_back2_edit">
-            <div class="focused">
+            <div class="focused container-xl containerxl_padding">
                 <div class="color_top_edit">
                     <h4> ID: 001 Transcripción Call Center: Ripley. Ejecutivo: Felipe Morales Fecha: 25/08/2022 </h4>
                 </div>
@@ -69,7 +61,18 @@
             </div> 
          </div>
         </div>
-    </div>
+            </div>
+          <!-- Lo que esta haciendo el Container XL es centrar el div principal, abarcando width: 100%; margin-right: auto; margin-left: auto; -->
+        <div class="d-flex" >
+            <div class="ml-auto">
+                <div class="btn_guardar">
+                <h3>Guardar Transcripción</h3>
+                <button type="button" class="btn btn-outline-success">Guardar</button>
+                </div>
+            </div>
+        </div>
+      </div>  
+       
     </body>
  </template>
 
