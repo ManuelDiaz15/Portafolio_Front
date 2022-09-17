@@ -1,12 +1,17 @@
 <template>
     <!-- Cuerpo de la Page -->
     <body class="color_back1_edit">
-        <!-- Lo que esta haciendo el Container XL es centrar el div principal, abarcando width: 100%; margin-right: auto; margin-left: auto; -->
-        <div class="container-xl containerxl_padding" >
-                <div class="btn_guardar">
-                <h3>Guardar Transcripción</h3>
-                <button type="button" class="color_btn"><strong>Guardar</strong></button>
+        <div class="d-flex">
+                <div class="ml-auto">
+                    <div class="btn_guardar">
+                     <h3>Guardar Transcripción</h3>
+                     <button type="button" class="btn btn-outline-success">Guardar</button>
                 </div>
+                </div>
+            </div>
+        <!-- Lo que esta haciendo el Container XL es centrar el div principal, abarcando width: 100%; margin-right: auto; margin-left: auto; -->
+        <div class="container-xl containerxl_padding d-flex" >
+            <div>
          <div class="color_back2_edit">
             <div class="focused">
                 <div class="color_top_edit">
@@ -62,6 +67,7 @@
                     </div>
                 </div>
             </div> 
+         </div>
         </div>
     </div>
     </body>
@@ -80,6 +86,13 @@
     border-radius: 15px;
     font-size: 16px;
     background: #1d67cd;
+}
+.btn_guardar{
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    font-size: 16px;
+    background: #1dcdbb;
 }
 /* ID, CALL CENTER, AGENT, DATE */
 .color_top_edit {
