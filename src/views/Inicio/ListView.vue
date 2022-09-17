@@ -1,15 +1,12 @@
 <template>
-    <body>
-    <div class="Title-list">
+    <body class="color-body1">
+    <div class="d-flex">
+        <div class="container-fluid">
+            <div class="Title-list">
         <h2>{{ message }}</h2>
     </div>
-    <div class="container-list">
-        <div class="filter">
-            <p class="title-filter">Ingresa la ID de la transcripcion</p>
-            <input  class="F-input" placeholder="ID-transcripción">
-            <button class="btn-filter">Buscar</button>
-        </div>
-        <div class="Back-Table">
+    <div class="d-flex">
+        <div class="container-fluid Back-Table">
             <table class="table table-bordered table-responsive table-striped">
 				<thead class="table-head">
 					<tr>
@@ -34,6 +31,18 @@
             </table>
         </div>
         
+         </div>
+        
+        </div>
+        <div class="d-flex" >
+        <div class="ml-auto search-center1">
+            <div class="filter">
+                <p class="title-filter">Ingresa la ID de la transcripcion</p>
+                    <input  class="F-input" placeholder="ID-transcripción">
+                    <button class="btn-filter">Buscar</button>
+            </div>
+        </div>
+    </div>
     </div>
     </body>
 </template>
@@ -50,15 +59,17 @@
 </script>
 <style>
 /* fondo */
-.container-list{
+.color-body1{
     background-color: rgb(232 230 230);
-    padding: 100px;
 }
 /* titulo */
 .Title-list{
     text-align: center;
 }
 /* filtro */
+.search-center1{
+    margin-top: 24%;
+}
 .filter{
     background-color: #00A274;
 	border: 5px solid #C0C0C0;
