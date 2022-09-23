@@ -15,7 +15,7 @@
                        <!--  <v-img contain alt="Alloxentric Agent" src="@/assets/Agent.png" max-height="50"></v-img> --> 
                         <p class="p text-left"> <strong>Agent</strong></p> <!-- Se utiliza strong para dejar en negrita el texto -->
                         <p class="p text-left">
-                            Thank you for calling ABC Company. My name is Ashley. How may I help you today?
+                           {{ message }}
                         </p>
                     </div>
                     <div class="input-inferior">
@@ -23,41 +23,7 @@
                     </div>
                 </div>
                 <div class="linea"></div>
-                <div class="focused color_speaker_edit1">
-                    <div >
-                        <p class="p text-left"> <strong>Customer</strong></p>  
-                        <p class="p text-left">
-                        I am calling because I received a Wrong bill. I just paid my phone bill two days ago and my payment is not reflected in the bill.
-                        </p>
-                    </div>
-                    <div class="input-inferior">
-                        <input type="text" class="input"  v-on:keyup.enter="Agregar " placeholder="Enviar Transcripción" v-model="eviarContenido">
-                    </div>
-                </div>
-                <div class="linea"></div>
-                <div class="focused color_speaker_edit1">
-                    <div>
-                        <p class="p text-left"> <strong>Agent</strong></p>  
-                        <p class="p text-left">
-                            Thank you for calling ABC Company. My name is Ashley. How may I help you today?
-                        </p>
-                    </div>
-                    <div class="input-inferior">
-                        <input type="text" class="input"  v-on:keyup.enter="Agregar " placeholder="Enviar Transcripción" v-model="eviarContenido">
-                    </div>
-                </div>
-                <div class="linea"></div>
-                <div class="focused color_speaker_edit1">
-                    <div >
-                        <p class="p text-left"> <strong>Customer</strong></p>  
-                        <p class="p text-left">
-                        I am calling because I received a Wrong bill. I just paid my phone bill two days ago and my payment is not reflected in the bill.
-                        </p>
-                    </div>
-                    <div class="input-inferior">
-                        <input type="text" class="input"  v-on:keyup.enter="Agregar " placeholder="Enviar Transcripción" v-model="eviarContenido">
-                    </div>
-                </div>
+               
             </div> 
          </div>
         </div>
@@ -75,6 +41,17 @@
        
     </body>
  </template>
+
+<script lang="ts">
+	import { Component, Vue } from 'vue-property-decorator';
+	@Component({
+		name: 'EditView',
+	})
+	export default class EditView extends Vue {
+		public message = this.$t("Main.message");
+
+	}
+</script>
 
 <style>
 /* Padding que separa los dos colores en TOP*/
