@@ -9,21 +9,23 @@
                 <div class="color_top_edit">
                     <h4> ID: 001 Transcripción Call Center: Ripley. Ejecutivo: Felipe Morales Fecha: 25/08/2022 </h4>
                 </div>
-                <div class="linea"></div>
+                <div v-for="c in [1, 2]" v-bind:key="c.id">
+                    <div class="linea"></div>
+                
                 <div class="focused color_speaker_edit1">
-                    <div>
+                    <div >
                        <!--  <v-img contain alt="Alloxentric Agent" src="@/assets/Agent.png" max-height="50"></v-img> --> 
                         <p class="p text-left"> <strong>Agent</strong></p> <!-- Se utiliza strong para dejar en negrita el texto -->
                         <p class="p text-left">
-                           {{ message }}
+                           aaa
                         </p>
                     </div>
                     <div class="input-inferior">
                         <input type="text" class="input"  v-on:keyup.enter="Agregar " placeholder="Enviar Transcripción" v-model="eviarContenido">
                     </div>
                 </div>
-                <div class="linea"></div>
-               
+                
+                </div>
             </div> 
          </div>
         </div>
@@ -42,15 +44,8 @@
     </body>
  </template>
 
-<script lang="ts">
-	import { Component, Vue } from 'vue-property-decorator';
-	@Component({
-		name: 'EditView',
-	})
-	export default class EditView extends Vue {
-		public message = this.$t("Main.message");
-
-	}
+<script>
+	
 </script>
 
 <style>
